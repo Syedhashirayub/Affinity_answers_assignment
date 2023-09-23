@@ -65,7 +65,7 @@ def main():
         SELECT t.species, MAX(r.length) AS max_length
         FROM rfamseq r
         JOIN taxonomy t ON r.ncbi_id = t.ncbi_id
-        WHERE t.species LIKE '%rice%'
+        WHERE t.species LIKE '%Oryza sativa%'
         GROUP BY t.species
         ORDER BY max_length DESC
         LIMIT 1;
@@ -73,7 +73,7 @@ def main():
     """
     execute_query(cursor, query_c)
 
-    #Answer for question c -> 'Cronobacter turicensis z3032', '4384463'
+    #Answer for question c -> 'Oryza sativa Indica Group', '47244934'
     
 
     # Query for question d:

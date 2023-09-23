@@ -30,6 +30,8 @@ def main():
         WHERE species LIKE '%Panthera tigris%';
     """
     execute_query(cursor, query_a1)
+
+    #Answer for question a1 -> 8
     
     query_a2 = """
         SELECT ncbi_id 
@@ -37,6 +39,8 @@ def main():
         WHERE species LIKE '%Panthera tigris sumatrae%';
     """
     execute_query(cursor, query_a2)
+
+    #Answer for question a2 -> 9695
 
     # Query for question b:
     print("Question b:")
@@ -68,6 +72,9 @@ def main():
 
     """
     execute_query(cursor, query_c)
+
+    #Answer for question c -> 'Cronobacter turicensis z3032', '4384463'
+    
 
     # Query for question d:
     print("Question d:")
